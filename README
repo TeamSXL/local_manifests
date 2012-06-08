@@ -1,0 +1,2 @@
+Place the Localmanifest.xml in the root of the .repo folder
+So it will look like (yoursourcefolder)/.repo/local_manifest.xml
