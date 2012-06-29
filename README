@@ -1,2 +1,6 @@
-Place the Localmanifest.xml in the root of the .repo folder
+Place the Local_manifest.xml in the root of the .repo folder
 So it will look like (yoursourcefolder)/.repo/local_manifest.xml
+
+                          or
+
+curl https://raw.github.com/xmc-wildchild22/local_manifest/ics/local_manifest.xml >>.repo/local_manifest.xml
