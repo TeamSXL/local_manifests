@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="github"
-           fetch="git://github.com/"/>
- <remove-project name="AOKP/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github"/>
- <remove-project name="AOKP/android_hardware_libhardware" path="" remote="github"/>
- <remove-project name="AOKP/android_device_acer_picasso" path="device/acer/picasso" remote="github"/>
-  <project name="WildchildIcE/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="ics" remote="github"/>
-  <project name="WildchildIcE/android_hardware_libhardware" path="hardware/libhardware" revision="ics" remote="github"/>
- <project name="WildchildIcE/vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="ics" remote="github"/>
-  <project name="WildchildIcE/device_htc_doubleshot" path="device/htc/doubleshot" revision="ics" remote="github"/>
- <project name="CyanogenMod/android_packages_apps_Apollo" path="packages/apps/Apollo" revision="ics" remote="github"/>
- </manifest>
+<project path="device/htc/doubleshot" name="platform_device_htc_doubleshot" remote="bean" />
+  <project path="vendor/htc/doubleshot" name="platform_vendor_htc_doubleshot" remote="bean" />
+  <project path="device/htc/msm8660-common" name="bruce2728/android_device_htc_msm8660-common" />
+  <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" revision="gingerbread" />
+</manifest>
