@@ -3,4 +3,4 @@ So it will look like (yoursourcefolder)/.repo/local_manifest.xml
 
                           or
 
-curl https://raw.github.com/xmc-wildchild22/local_manifest/ics/local_manifest.xml >>.repo/local_manifest.xml
+curl https://raw.github.com/xmc-wildchild22/local_manifest/jellybean/local_manifest.xml >.repo/local_manifest.xml
