@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<project path="device/htc/doubleshot" name="VanillaBean/platform_device_htc_doubleshot" />
+<remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
+  <project path="device/htc/doubleshot" name="VanillaBean/platform_device_htc_doubleshot" />
   <project path="vendor/htc/doubleshot" name="VanillaBean/platform_vendor_htc_doubleshot" />
   <project path="device/htc/msm8660-common" name="bruce2728/android_device_htc_msm8660-common" />
+  <project path="hardware/qcom/audio" name="bruce2728/android_hardware_qcom_audio" />
   <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" revision="gingerbread" />
 </manifest>
