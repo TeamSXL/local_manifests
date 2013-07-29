@@ -9,6 +9,10 @@
 		<copyfile src="James" dest="James" />
 	</project>
 	  
+	<project path="local_manifest" name="EmmanuelU/manifest" revision="jellybean-4.3" remote="github">
+		<copyfile src="local_manifest.xml" dest=".repo/local_manifests/manifest.xml" />
+	</project>
+	  
 	<project name="EmmanuelU/wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="wild" remote="github" />
 
 </manifest>
