@@ -11,7 +11,7 @@
 		<copyfile src="James" dest="James" />
 	</project>
 	  
-	<project path="local_manifest" name="manifest" revision="jellybean-4.3" remote="emmanuel">
+	<project path="manifest" name="local_manifest" revision="jellybean-4.3" remote="emmanuel">
 		<copyfile src="local_manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
 	  
