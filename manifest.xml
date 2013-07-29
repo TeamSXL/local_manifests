@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="DS"
+           fetch="git://github.com/JellybeanDS/"/>
+           
+        <remote name="emmanuel"
+           fetch="git://github.com/EmmanuelU/"/>
+
+	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
+	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
+	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-10.2" remote="DS" />
+
+	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
+		<copyfile src="James" dest="James" />
+	</project>
+	  
+	<project path="manifest" name="local_manifests" revision="cm-10.2" remote="DS">
+		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
+	</project>
+	  
+	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="wild" remote="emmanuel" />
+
+</manifest>
