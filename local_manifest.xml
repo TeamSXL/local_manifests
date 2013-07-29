@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<remote name="emmanuel"
+           fetch="git://github.com/EmmanuelU/"/>
 
-	<project name="../EmmanuelU/android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="jb4.3" remote="github" />
-	<project name="../EmmanuelU/android_device_htc_doubleshot" path="device/htc/doubleshot" revision="jb4.3" remote="github" />
-	<project name="../EmmanuelU/android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="jb4.3" remote="github" />
+	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="jb4.3" remote="emmanuel" />
+	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="jb4.3" remote="emmanuel" />
+	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="jb4.3" remote="emmanuel" />
 
-	<project path="buildbot" name="../EmmanuelU/James_Buildbot" revision="master" remote="github">
+	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
 	  
-	<project path="local_manifest" name="../EmmanuelU/manifest" revision="jellybean-4.3" remote="github">
+	<project path="local_manifest" name="manifest" revision="jellybean-4.3" remote="emmanuel">
 		<copyfile src="local_manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
 	  
-	<project name="../EmmanuelU/wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="wild" remote="github" />
+	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="wild" remote="emmanuel" />
 
 </manifest>
