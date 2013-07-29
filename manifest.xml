@@ -19,5 +19,9 @@
 	</project>
 	  
 	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="wild" remote="emmanuel" />
+	
+	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
+	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-10.2" remote="DS" />
+	
 
 </manifest>
