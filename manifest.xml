@@ -17,6 +17,8 @@
 	<project path="manifest" name="local_manifests" revision="cm-10.2" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
+	
+	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	  
 	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="wild" remote="emmanuel" />
 	
