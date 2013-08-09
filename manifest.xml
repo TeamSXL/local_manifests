@@ -24,6 +24,10 @@
 	<remove-project name="CyanogenMod/android_frameworks_av" />
 	<project name="android_frameworks_av" path="frameworks/av" revision="cm-10.2" remote="DS" />
 	
+	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-10.2" remote="DS" />
+    
+	
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	
 	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.0_4.3" remote="emmanuel" />
