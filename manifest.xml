@@ -8,6 +8,11 @@
            
         <remote name="githubby"
            fetch="git://github.com/"/>
+           
+         <remove-project name="CyanogenMod/android_build" />
+         <project path="build" name="android_build" revision="cm-10.2" remote="DS" >
+	    <copyfile src="core/root.mk" dest="Makefile" />
+	  </project>
 
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
