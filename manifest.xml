@@ -5,6 +5,9 @@
            
         <remote name="emmanuel"
            fetch="git://github.com/EmmanuelU/"/>
+           
+        <remote name="githubby"
+           fetch="git://github.com/"/>
 
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
@@ -22,6 +25,9 @@
 	<project name="android_frameworks_av" path="frameworks/av" revision="cm-10.2" remote="DS" />
 	
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
+	
+	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+	<project name="Team-Hydra/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-10.2" remote="githubby" />
 	  
 	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.0_4.3" remote="emmanuel" />
 	
