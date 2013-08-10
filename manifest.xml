@@ -32,6 +32,8 @@
 	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
 	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-10.2" remote="DS" />
     
+    	<remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" />
+    	<project name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="cm-10.2" remote="DS" />
 	
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	
@@ -40,5 +42,7 @@
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
 	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-10.2" remote="DS" />
 	
+	<project name="android_hardware_qcom_media-legacy" path="hardware/media-legacy" revision="cm-10.2" remote="DS" />
+	<project name="android_hardware_qcom_display-legacy" path="hardware/display-legacy" revision="cm-10.2" remote="DS" />
 
 </manifest>
