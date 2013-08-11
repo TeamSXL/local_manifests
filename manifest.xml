@@ -44,7 +44,7 @@
 	<remove-project name="CyanogenMod/android_hardware_libhardware" />
 	<project name="android_hardware_libhardware" path="hardware/libhardware" revision="cm-10.2" remote="DS" />
 	
-	<!-- <project name="android_hardware_qcom_media-legacy" path="hardware/media-legacy" revision="cm-10.2" remote="DS" /> -->
-	<project name="android_hardware_qcom_display-legacy" path="hardware/display-legacy" revision="cm-10.2" remote="DS" />
+	<!-- <project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.2" remote="DS" /> -->
+	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.2" remote="DS" />
 
 </manifest>
