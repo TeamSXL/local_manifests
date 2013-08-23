@@ -53,7 +53,7 @@
 	
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" />
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" />
-	<project path="prebuilts/gcc/linux-x86/arm/linux-x86/arm/arm-eabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="DS" revision="cm-10.2" />
+	<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="DS" revision="cm-10.2" />
   	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.7" remote="DS" revision="cm-10.2" />
 
 </manifest>
