@@ -15,6 +15,7 @@
 	  </project>
 
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
+	<project name="android_vendor_htc" path="vendor/htc" revision="cm-10.2" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
 	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-10.2" remote="DS" />
 
