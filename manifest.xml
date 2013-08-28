@@ -50,11 +50,7 @@
 	
 	<project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.2" remote="DS" />
 	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.2" remote="DS" />
-	<!--
-	<project name="android_hardware_qcom_gps-legacy" path="hardware/qcom/gps-legacy" revision="cm-10.2" remote="DS" />
-	<project name="android_hardware_qcom_gps" path="hardware/qcom/gps" revision="cm-10.2" remote="DS" />
-	-->
-	
+
 	<!--
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" />
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" />
