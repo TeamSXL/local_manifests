@@ -29,8 +29,6 @@
 	
 	<remove-project name="CyanogenMod/android_frameworks_av" />
 	<project name="android_frameworks_av" path="frameworks/av" revision="cm-10.2" remote="DS" />
-	<remove-project name="CyanogenMod/android_frameworks_native" />
-	<project name="android_frameworks_native" path="frameworks/native" revision="cm-10.2" remote="DS" />
 	
 	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
 	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-10.2" remote="DS" />
