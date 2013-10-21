@@ -9,16 +9,6 @@
         <remote name="githubby"
            fetch="git://github.com/"/>
            
-         <remove-project name="CyanogenMod/android_build" />
-         <project path="build" name="android_build" revision="cm-10.2" remote="DS" >
-	    <copyfile src="core/root.mk" dest="Makefile" />
-	  </project>
-
-	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
-	<project name="android_vendor_htc" path="vendor/htc" revision="cm-10.2" remote="DS" />
-	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
-	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-10.2" remote="DS" />
-
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
@@ -27,39 +17,44 @@
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
 	
-	<remove-project name="CyanogenMod/android_frameworks_av" />
-	<project name="android_frameworks_av" path="frameworks/av" revision="cm-10.2" remote="DS" />
-	<!--
-	<remove-project name="CyanogenMod/android_frameworks_base" />
-	<project name="android_frameworks_base" path="frameworks/base" revision="cm-10.2" remote="DS" />
-	-->
-	
-	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-10.2" remote="DS" />
-    
-    	<remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" />
-    	<project name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="cm-10.2" remote="DS" />
-    	
-    	<remove-project name="CyanogenMod/android_packages_apps_Gallery2" />
-    	<project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" revision="cm-10.2" remote="DS" />
-    	<remove-project name="CyanogenMod/android_packages_apps_Settings" />
-    	<project name="android_packages_apps_Settings" path="packages/apps/Settings" revision="cm-10.2" remote="DS" />
-	
+           
+         <remove-project name="CyanogenMod/android_build" />
+         <project path="build" name="android_build" revision="cm-10.2" remote="DS" >
+	    <copyfile src="core/root.mk" dest="Makefile" />
+	  </project>
+	  
+	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" />
+	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" />
+	<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="DS" revision="cm-10.2" />
+  	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.7" remote="DS" revision="cm-10.2" />
+
+
+	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
+	<project name="android_vendor_htc" path="vendor/htc" revision="cm-10.2" remote="DS" />
+	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
+	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-10.2" remote="DS" />
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
-	
 	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.0" remote="emmanuel" />
 	
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
 	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-10.2" remote="DS" />
 	<remove-project name="CyanogenMod/android_hardware_libhardware" />
 	<project name="android_hardware_libhardware" path="hardware/libhardware" revision="cm-10.2" remote="DS" />
-	
 	<project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.2" remote="DS" />
 	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.2" remote="DS" />
+	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-10.2" remote="DS" />
 
-	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" />
-	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" />
-	<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="DS" revision="cm-10.2" />
-  	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.7" remote="DS" revision="cm-10.2" />
-
+	
+	<remove-project name="CyanogenMod/android_frameworks_av" />
+	<project name="android_frameworks_av" path="frameworks/av" revision="cm-10.2" remote="DS" />
+	
+    
+    	<remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" />
+    	<project name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="cm-10.2" remote="DS" />
+    	<remove-project name="CyanogenMod/android_packages_apps_Gallery2" />
+    	<project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" revision="cm-10.2" remote="DS" />
+    	<remove-project name="CyanogenMod/android_packages_apps_Settings" />
+    	<project name="android_packages_apps_Settings" path="packages/apps/Settings" revision="cm-10.2" remote="DS" />
+	
 </manifest>
