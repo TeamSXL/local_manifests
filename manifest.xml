@@ -29,12 +29,12 @@
   	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.7" remote="DS" revision="cm-10.2" />
 
 
+	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
-	<project name="android_vendor_htc" path="vendor/htc" revision="cm-10.2" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
 	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-10.2" remote="DS" />
-	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.0" remote="emmanuel" />
+	
 	
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
 	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-10.2" remote="DS" />
@@ -42,8 +42,6 @@
 	<project name="android_hardware_libhardware" path="hardware/libhardware" revision="cm-10.2" remote="DS" />
 	<project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.2" remote="DS" />
 	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.2" remote="DS" />
-	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-10.2" remote="DS" />
 
 	
 	<remove-project name="CyanogenMod/android_frameworks_av" />
