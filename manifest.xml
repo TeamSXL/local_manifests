@@ -46,5 +46,7 @@
 	
 	<remove-project name="CyanogenMod/android_frameworks_av" />
 	<project name="android_frameworks_av" path="frameworks/av" revision="cm-11.0" remote="DS" />
+	<remove-project name="CyanogenMod/android_frameworks_native" />
+	<project name="android_frameworks_native" path="frameworks/native" revision="cm-11.0" remote="DS" />
 	
 </manifest>
