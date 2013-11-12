@@ -23,6 +23,9 @@
 	    <copyfile src="core/root.mk" dest="Makefile" />
 	  </project>
 	  
+	 <remove-project name="CyanogenMod/android_bionic" />
+	 <project name="android_bionic" path="bionic" revision="cm-11.0" remote="DS" />
+	  
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" />
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" />
 	<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="DS" revision="cm-11.0" />
