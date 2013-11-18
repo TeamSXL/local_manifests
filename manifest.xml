@@ -44,6 +44,9 @@
 	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-11.0" remote="DS" />
 	<remove-project name="CyanogenMod/android_hardware_libhardware" />
 	<project name="android_hardware_libhardware" path="hardware/libhardware" revision="cm-11.0" remote="DS" />
+	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-11.0" remote="DS" />
+	
 	<project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-11.0" remote="DS" />
 	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-11.0" remote="DS" />
 
