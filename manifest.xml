@@ -9,6 +9,9 @@
         <remote name="githubby"
            fetch="git://github.com/"/>
            
+        <remote name="Evervolv"
+           fetch="git://github.com/Evervolv/"/>
+           
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
@@ -50,6 +53,8 @@
         <remove-project name="CyanogenMod/android_bionic" />
         <project name="android_bionic" path="bionic" revision="cm-11.0" remote="DS" />
 	
+	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
+	<project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="kitkat" remote="Evervolv" />
 	<remove-project name="CyanogenMod/android_frameworks_av" />
 	<project name="android_frameworks_av" path="frameworks/av" revision="cm-11.0" remote="DS" />
 	<remove-project name="CyanogenMod/android_frameworks_native" />
