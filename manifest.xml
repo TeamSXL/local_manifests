@@ -52,8 +52,6 @@
 
         <remove-project name="CyanogenMod/android_bionic" />
         <project name="android_bionic" path="bionic" revision="cm-11.0" remote="DS" />
-        <remove-project name="CyanogenMod/android_system_vold" />
-        <project path="system/vold" name="android_system_vold" revision="cm-11.0" remote="DS" />
 	
 	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
 	<project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="cm-11.0" remote="DS" />
