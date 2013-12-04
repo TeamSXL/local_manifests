@@ -15,7 +15,6 @@
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
-	  
 	<project path="manifest" name="local_manifests" revision="cm-11.0" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
@@ -38,12 +37,8 @@
 	<project name="android_hardware_libhardware" path="hardware/libhardware" revision="cm-11.0" remote="DS" />
 	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
 	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-11.0" remote="DS" />
-	
 	<project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-11.0" remote="DS" />
 	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-11.0" remote="DS" />
-
-        <remove-project name="CyanogenMod/android_bionic" />
-        <project name="android_bionic" path="bionic" revision="cm-11.0" remote="DS" />
 	
 	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
 	<project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="cm-11.0" remote="DS" />
