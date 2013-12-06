@@ -52,4 +52,7 @@
 	<remove-project name="CyanogenMod/android_packages_providers_MediaProvider" />
 	<project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider"  revision="cm-11.0" remote="DS" />
 	
+	<remove-project name="CyanogenMod/android_packages_apps_Camera2" />
+	<project path="packages/apps/Camera2" name="android_packages_apps_Camera2"  revision="cm-11.0" remote="DS" />
+	
 </manifest>
