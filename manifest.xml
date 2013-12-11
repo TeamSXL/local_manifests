@@ -15,7 +15,7 @@
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
-	<project path="manifest" name="local_manifests" revision="cm-11.0" remote="DS">
+	<project path="manifest" name="local_manifests" revision="cm-11.0-ion" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
 	
