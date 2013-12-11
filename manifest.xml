@@ -28,7 +28,7 @@
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-11.0-ion" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-11.0-ion" remote="DS" />
-	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-11.0-ion" remote="DS" />
+	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-11.0" remote="DS" />
 	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.0-ion" remote="emmanuel" />
 	
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
