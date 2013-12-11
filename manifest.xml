@@ -21,7 +21,7 @@
 	
            
          <remove-project name="CyanogenMod/android_build" />
-         <project path="build" name="android_build" revision="cm-11.0-ion" remote="DS" >
+         <project path="build" name="android_build" revision="cm-11.0" remote="DS" >
 	    <copyfile src="core/root.mk" dest="Makefile" />
 	  </project>
 
