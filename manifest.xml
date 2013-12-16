@@ -12,7 +12,7 @@
         <remote name="Evervolv"
            fetch="git://github.com/Evervolv/"/>
 
-	<remote name "TeamSXL"
+	<remote name="TeamSXL"
 	   fetch="git://github.com/TeamSXL/"/>
            
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
