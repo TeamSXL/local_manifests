@@ -11,11 +11,14 @@
            
         <remote name="Evervolv"
            fetch="git://github.com/Evervolv/"/>
+
+	<remote name "TeamSXL"
+	   fetch="git://github.com/TeamSXL/"/>
            
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
-	<project path="manifest" name="local_manifests" revision="cm-11.0-ion" remote="DS">
+	<project path="manifest" name="local_manifests" revision="cm-11.0-ion-3.4" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
 	
@@ -28,8 +31,8 @@
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-11.0-ion" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-11.0-ion" remote="DS" />
-	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-11.0" remote="DS" />
-	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.0-ion" remote="emmanuel" />
+	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-11.0-3.4" remote="DS" />
+	<project name="htc-cm-kernel-doubleshot-34" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.4" remote="TeamSXL" />
 	
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
 	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-11.0" remote="DS" />
