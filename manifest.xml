@@ -32,7 +32,7 @@
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-11.0-ion" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-11.0-ion" remote="DS" />
 	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-11.0-3.4" remote="DS" />
-	<project name="htc-cm-kernel-doubleshot-34" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.4" remote="TeamSXL" />
+	<project name="htc-cm-kernel-doubleshot-34" path="kernel/htc/doubleshot" revision="old-jellybean-3.4" remote="TeamSXL" />
 	
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
 	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-11.0" remote="DS" />
