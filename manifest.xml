@@ -21,41 +21,18 @@
 	<project path="manifest" name="local_manifests" revision="cm-11.0-ion-3.4" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
-	
-           
-         <remove-project name="CyanogenMod/android_build" />
-         <project path="build" name="android_build" revision="cm-11.0" remote="DS" >
-	    <copyfile src="core/root.mk" dest="Makefile" />
-	  </project>
 
-	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
-	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-11.0-ion" remote="DS" />
+
+ <!--Repos for DS-->
 	<project name="android_device_htc_doubleshot_34" path="device/htc/doubleshot" revision="cm-11.0" remote="TeamSXL" />
 	<project name="android_vendor_htc_doubleshot_34" path="vendor/htc-extra/doubleshot" revision="cm-11.0-3.4" remote="TeamSXL" />
 	<project name="htc-cm-kernel-doubleshot-34" path="kernel/htc/doubleshot" revision="old-jellybean-3.4" remote="TeamSXL" />
 	
-	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
-	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-11.0" remote="DS" />
-	<remove-project name="CyanogenMod/android_hardware_libhardware" />
-	<project name="android_hardware_libhardware" path="hardware/libhardware" revision="cm-11.0" remote="DS" />
-	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-11.0" remote="DS" />
-	<project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-11.0-ion" remote="DS" />
-	<remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
-	<project name="android_hardware_qcom_display" path="hardware/qcom/display" revision="cm-11.0" remote="TeamSXL" />
-	
-	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
-	<project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="cm-11.0" remote="DS" />
-	<!--
-	<remove-project name="CyanogenMod/android_frameworks_av" />
-	<project name="android_frameworks_av" path="frameworks/av" revision="cm-11.0" remote="DS" />
-	<remove-project name="CyanogenMod/android_frameworks_native" />
-	<project name="android_frameworks_native" path="frameworks/native" revision="cm-11.0" remote="DS" />
-	<remove-project name="CyanogenMod/android_frameworks_base" />
-	<project name="android_frameworks_base" path="frameworks/base" revision="cm-11.0" remote="DS" />
-	-->
-
-	<remove-project name="CyanogenMod/android_packages_apps_Camera2" />
-	<project path="packages/apps/Camera2" name="android_packages_apps_Camera2"  revision="cm-11.0" remote="DS" />
+  <remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
+        <project name="android_hardware_qcom_display" path="hardware/qcom/display" revision="cm-11.0" remote="TeamSXL" />
+        
+ <!--Custom versions of generic repositories-->
+  <project path="frameworks/av" name="TeamSXL/android_frameworks_av" />
+  <project path="packages/providers/MediaProvider" name="TeamSXL/android_packages_providers_MediaProvider" />
 	
 </manifest>
