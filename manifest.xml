@@ -31,7 +31,7 @@
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-11.0-ion" remote="DS" />
 	<project name="android_device_htc_doubleshot_34" path="device/htc/doubleshot" revision="cm-11.0" remote="TeamSXL" />
-	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-11.0-3.4" remote="DS" />
+	<project name="android_vendor_htc_doubleshot_34" path="vendor/htc-extra/doubleshot" revision="cm-11.0-3.4" remote="TeamSXL" />
 	<project name="htc-cm-kernel-doubleshot-34" path="kernel/htc/doubleshot" revision="old-jellybean-3.4" remote="TeamSXL" />
 	
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
@@ -41,7 +41,8 @@
 	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
 	<project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-11.0" remote="DS" />
 	<project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-11.0-ion" remote="DS" />
-	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-11.0-ion" remote="DS" />
+	<remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
+	<project name="android_hardware_qcom_display" path="hardware/qcom/display" revision="cm-11.0" remote="TeamSXL" />
 	
 	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
 	<project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="cm-11.0" remote="DS" />
