@@ -37,7 +37,7 @@
   <project path="packages/providers/MediaProvider" name="TeamSXL/android_packages_providers_MediaProvider" />
   
   <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-        <project name="android_hardware_qcom_audio-caf" path="Team-SennyC2/hardware/qcom/audio-caf" revision="cm-11.0" remote="githubby" />
+        <project name="Team-SennyC2/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-11.0" remote="githubby" />
         
 	
 </manifest>
