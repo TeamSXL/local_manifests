@@ -3,4 +3,4 @@ So it will look like (yoursourcefolder)/.repo/local_manifests/manifest.xml
 
                           or
 
-curl https://raw.github.com/KitKatDS/local_manifests/cm-11.0-ion/manifest.xml >.repo/local_manifests/manifest.xml
+curl https://raw.github.com/KitKatDS/local_manifests/cm-11.0-ion-3.4/manifest.xml >.repo/local_manifests/manifest.xml
