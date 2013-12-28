@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<manifest>
 
-<remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
+ <!--Repositories to remove-->
   <remove-project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
   <remove-project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" />
+  <remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
   <remove-project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
   <remove-project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <remove-project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
@@ -18,18 +20,12 @@
   <remove-project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <remove-project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <remove-project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
- 
- <!--Custom Repos-->
-  <remove-project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" />
-  <project path="packages/providers/MediaProvider" name="Team-SennyC2/android_packages_providers_MediaProvider" />
-  
-  <project path="hardware/qcom/display" name="Team-SennyC2/android_hardware_qcom_display" remote="github" revision="cm-10.1" />
-  <project path="hardware/qcom/media-legacy" name="Team-SennyC2/android_hardware_qcom_media-legacy" remote="github" revision="cm-11.0" />
-  <project path="hardware/qcom/audio-caf" name="Team-SennyC2/android_hardware_qcom_audio-caf" groups="caf" />
- 
- <!--Repos for DS-->
-	<project name="android_device_htc_doubleshot_34" path="device/htc/doubleshot" revision="cm-11.0" remote="TeamSXL" />
-	<project name="android_vendor_htc_doubleshot_34" path="vendor/htc-extra/doubleshot" revision="cm-11.0" remote="TeamSXL" />
-	<project name="ds-kernel-3.4" path="kernel/htc/doubleshot" revision="master" remote="TeamSXL" />
+
+ <!--Device-specific repositories-->
+  <project path="hardware/qcom/display-legacy" name="Team-SennyC2/android_hardware_qcom_display-legacy" remote="github" revision="cm-11.0" />
+
+  <project name="TeamSXL/android_device_htc_doubleshot_34" path="device/htc/doubleshot" revision="cm-11.0" remote="github" />
+  <project name="TeamSXL/android_vendor_htc_doubleshot_34" path="vendor/htc-extra/doubleshot" revision="cm-11.0" remote="github" />
+  <project name="TeamSXL/ds-kernel-3.4" path="kernel/htc/doubleshot" revision="master" remote="github" />
 
 </manifest>
