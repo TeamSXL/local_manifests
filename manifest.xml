@@ -1,43 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-	<remote name="DS"
-           fetch="git://github.com/KitKatDS/"/>
-           
-        <remote name="emmanuel"
-           fetch="git://github.com/EmmanuelU/"/>
-           
-        <remote name="githubby"
-           fetch="git://github.com/"/>
-           
-        <remote name="Evervolv"
-           fetch="git://github.com/Evervolv/"/>
 
-	<remote name="TeamSXL"
-	   fetch="git://github.com/TeamSXL/"/>
-           
-	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
-		<copyfile src="James" dest="James" />
-	</project>
-	<project path="manifest" name="local_manifests" revision="cm-11.0-ion-3.4" remote="DS">
-		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
-	</project>
-
-
+<remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
+  <remove-project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
+  <remove-project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" />
+  <remove-project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
+  <remove-project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="pdk,darwin,arm" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" groups="darwin,mips" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" groups="pdk,darwin,mips" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="darwin,x86" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <remove-project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+ 
+ <!--Custom Repos-->
+  <remove-project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="Team-SennyC2/android_packages_providers_MediaProvider" />
+  
+  <project path="hardware/qcom/display" name="Team-SennyC2/android_hardware_qcom_display" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/media-legacy" name="Team-SennyC2/android_hardware_qcom_media-legacy" remote="github" revision="cm-11.0" />
+  <project path="hardware/qcom/audio-caf" name="Team-SennyC2/android_hardware_qcom_audio-caf" groups="caf" />
+ 
  <!--Repos for DS-->
 	<project name="android_device_htc_doubleshot_34" path="device/htc/doubleshot" revision="cm-11.0" remote="TeamSXL" />
-	<project name="android_vendor_htc_doubleshot_34" path="vendor/htc-extra/doubleshot" revision="cm-11.0-3.4" remote="TeamSXL" />
-	<project name="htc-cm-kernel-doubleshot-34" path="kernel/htc/doubleshot" revision="old-jellybean-3.4" remote="TeamSXL" />
-	
-  <remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
-        <project name="android_hardware_qcom_display" path="hardware/qcom/display" revision="cm-11.0" remote="TeamSXL" />
-        
-        
- <!--Custom versions of generic repositories thanks to TeamSennyC2-->
-  <project path="frameworks/av" name="TeamSXL/android_frameworks_av" />
-  <project path="packages/providers/MediaProvider" name="TeamSXL/android_packages_providers_MediaProvider" />
-  
-  <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-        <project name="Team-SennyC2/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" revision="cm-11.0" remote="githubby" />
-        
-	
+	<project name="android_vendor_htc_doubleshot_34" path="vendor/htc-extra/doubleshot" revision="cm-11.0" remote="TeamSXL" />
+	<project name="ds-kernel-3.4" path="kernel/htc/doubleshot" revision="master" remote="TeamSXL" />
+
 </manifest>
